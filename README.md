@@ -4,7 +4,7 @@ Last few years have seen great progress made in the domain of Object Detection. 
 
 ## 2-stage
 
-Model    | Backbone  | Tricks| mAP@VOC| mAP@COCO| FPS | Paper  | Date   | Note
+Model    | Backbone  | Tricks| VOC| COCO| FPS | Paper  | Date   | Note
 ------------|-----------|-------|----|----|----|------------|------|------
 R-CNN | VGG16 | - | - | - | -| [Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation] | - | CVPR2014 Oral
 Fast R-CNN | VGG16 | - | 70.0 | 19.7 | - | [Fast R-CNN] | 15.04 | CVPR2014 Oral
@@ -17,6 +17,22 @@ Faster R-CNN by G-RMI | Inception-ResNet-v2 | - | - | 34.7 | - | [Speed/accuracy
 Mask R-CNN |  ResNeXt | 6 | - | 39.8 | - | [Mask R-CNN] | 17.03 | ICCV2017 Best Paper
 Light-haed R-CNN | ResNet-101-FPN | 4,6 | - | 41.5 | - | [Light-Head R-CNN: In Defense of Two-stage Object Detector] | 17.11 | -
 Light-haed R-CNN | Xception | - | - | 30.7 | 102 | [Light-Head R-CNN: In Defense of Two-stage Object Detector] | 17.11 | -
+
+
+## 1-stage
+
+Model    | Backbone  | Tricks| VOC| COCO| FPS | Paper  | Date   | Note
+------------|-----------|-------|----|----|----|------------|------|------
+YOLO | Custom | - | 63.4 | - | 45 | [YOLO: You Only Look Once] | - | CVPR2016 Oral
+SSD500 | VGG16 | - | 75.1 | 24.4 | 23 | [SSD: Single Shot Detector] | 15.12 | ECCV2016 Oral
+SSD | ResNet-101 | - | - | 31.2 | 8 | [DSSD: Deconvolutional Single Shot Detector] | 17.01 | -
+YOLO v2 | DarkNet-19 | - | 78.6 | 21.6 | 40 | [YOLO9000: Better, Faster, Stronger] | - | CVPR2017
+DSSD | ResNet-101 | - | - | 33.2 | 6 | [DSSD: Deconvolutional Single Shot Detector] | 17.01 | -
+RON384++ | VGG16 | 3,7,8 | 77.6 | 27.4 | - | [RON: Reverse Connection with Objectness Prior Networks for Object Detection] | - | CVPR2017
+RetinaNet | ResNet-101-FPN | - | - | 39.1 | - | [Focal Loss for Dense Object Detection] | 17.08 | ICCV2017 Best student paper
+RefineDet512 | VGG16 | - | 81.8 | 33.0 | 24.1 | [Single-Shot Refinement Neural Network for Object Detection] | 17.11 | -
+RefineDet512+ | ResNet-101 | 3 | - | 41.8 | - | [Single-Shot Refinement Neural Network for Object Detection] | 17.11 | -
+
 
 Tricks list
 
@@ -33,17 +49,3 @@ Note:
 
 1. Pascal VOC AP results are evaluated with IOU 0.5. Models are trained on VOC07+12, tested on VOC07.
 2. MS COCO results are reported with training on trainval35k, testing on test-dev set.
-
-## 1-stage
-
-Model    | Backbone  | Tricks| mAP@VOC| mAP@COCO| FPS | Paper  | Date   | Note
-------------|-----------|-------|----|----|----|------------|------|------
-YOLO | Custom | - | 63.4 | - | 45 | [YOLO: You Only Look Once] | - | -
-SSD500 | VGG16 | - | 75.1 | 24.4 | 23 | [SSD: Single Shot Detector] | 15.12 | ECCV2016 Oral
-SSD | ResNet-101 | - | - | 31.2 | 8 | [DSSD: Deconvolutional Single Shot Detector] | 17.01 | -
-YOLO v2 | DarkNet-19 | - | 78.6 | 21.6 | 40 | [YOLO9000: Better, Faster, Stronger] | - | -
-DSSD | ResNet-101 | - | - | 33.2 | 6 | [DSSD: Deconvolutional Single Shot Detector] | 17.01 | -
-RON384++ | VGG16 | 3,7,8 | 77.6 | 27.4 | - | [RON: Reverse Connection with Objectness Prior Networks for Object Detection] | - | CVPR 2017 Poster
-RetinaNet | ResNet-101-FPN | - | - | 39.1 | - | [Focal Loss for Dense Object Detection] | 17.08 | ICCV2017 Best student paper
-RefineDet512 | VGG16 | - | 81.8 | 33.0 | 24.1 | [Single-Shot Refinement Neural Network for Object Detection] | 17.11 | -
-RefineDet512+ | ResNet-101 | 3 | - | 41.8 | - | [Single-Shot Refinement Neural Network for Object Detection] | 17.11 | -
