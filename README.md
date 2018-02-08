@@ -1,5 +1,7 @@
 # Object Detection Progress Tracker
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+
 Last few years have seen great progress made in the domain of Object Detection. With powerful classification networks as backbone, more and more well-designed detection heads have been proposed to handle the dilemma of recognition and localization. This repo serves as a tracker of these progress.
 
 ## 2-stage
@@ -51,3 +53,5 @@ Disclaimer:
 2. MS COCO results are reported with training on trainval35k, testing on test-dev set.
 3. All code repos are official implementation.
 4. Reported FPS are usually on GPU, not comparable actually.
+
+My Notes(in Chinese) can be found [here](https://blog.ddlee.cn/tags/Object-Detection/)
