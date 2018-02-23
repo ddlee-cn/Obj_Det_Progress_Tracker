@@ -49,9 +49,9 @@ RefineDet512+ | ResNet-101 | 3 | - | 41.8 | - | [Single-Shot Refinement Neural N
 
 
 #### To be added
-- [ ]FSSD 
-- [ ]
-- [ ]
+- [ ] FSSD 
+- [ ] 
+
 #### Disclaimer:
 
 1. Pascal VOC AP results are evaluated with IOU 0.5. Models are trained on VOC07+12, tested on VOC07.
