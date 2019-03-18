@@ -2,6 +2,17 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
+---
+
+[2019.03 Update]This repo collected stat-of-the-art results on Object Detection task before 2018.03. Since I've changed my research interest, I will not update this page anymore. A few recommended places for quickly learning about the area are:
+
+- [Object Detection Paper List](https://github.com/hoya012/deep_learning_object_detection)(Also a great review!)
+- [Paper With Code Leaderboards of COCO, Pascal, etc](https://paperswithcode.com/task/object-detection)
+
+PS: I still recommend that you should take notice of tricks the author used and FPS as well as their hardware platforms when evaluating a method. Happy Deep Learning.
+
+---
+
 Last few years have seen great progress made in the domain of Object Detection. With powerful classification networks as backbone, more and more well-designed detection heads have been proposed to handle the dilemma of recognition and localization. This repo serves as a tracker of these progress.
 
 ## 2-stage
@@ -44,13 +55,6 @@ RefineDet512+ | ResNet-101     | 3      | -    | 41.8 | -    | [Single-Shot Refi
 6. RoIAlign
 7. box voting
 8. flip
-
-### To be added
-
-- [ ] FSSD
-- [ ] DSOD
-- [ ] GRP-DSOD
-- [ ]
 
 ### Disclaimer:
 
